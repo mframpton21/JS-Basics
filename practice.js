@@ -69,52 +69,50 @@ var number = adder(1, 2, 3, 4, 5, 6);
 alert("The Total Number was " + number);
 
 
-//Next Problem
-
-
-
+// Problem 5
 //What is the difference between arguments and parameters?
 
-  //Answer Here
+//Answer Here
+Arguments are used when invoking a function.
+Parameters are used by the function and variables.
 
 
-//Next problem
-
-
-
+//Problem 6
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
+//Answer Here
+1. undefined
+2. null
+3. ""
+4. NaN
+5. false
+6. 0
+Example where name's value is one of the falsy values: 
+if (variableName) {
 
-  //Answer Here
+}
 
 
-
-//Next Problem
-
-
-
+// Problem 7
 //Create a function called myName that returns your name
 
-  //Code Here
+//Code Here
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
+//Code Here
 
 //Now alert the result of invoking newMyName
 
 
 
-//Next problem
-
-
-
+// Problem 8
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
+//Code Here
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-  //Code Here
+//Code Here
 
 //Now invoke innerFn.
