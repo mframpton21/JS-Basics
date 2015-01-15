@@ -73,14 +73,16 @@ alert("The Total Number was " + number);
 //What is the difference between arguments and parameters?
 
 //Answer Here
+/*
 Arguments are used when invoking a function.
 Parameters are used by the function and variables.
-
+*/
 
 //Problem 6
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 //Answer Here
+/*
 1. undefined
 2. null
 3. ""
@@ -88,31 +90,44 @@ Parameters are used by the function and variables.
 5. false
 6. 0
 Example where name's value is one of the falsy values: 
-if (variableName) {
-
+if (!variableName) {
+  < some logic ... >
 }
+*/
 
 
 // Problem 7
 //Create a function called myName that returns your name
 
 //Code Here
-
+var myName = function() {
+  return "Michael"
+};
 //Now save the function definition of myName into a new variable called newMyName
 
 //Code Here
-
+var newMyName = myName;
 //Now alert the result of invoking newMyName
-
+var result = newMyName();
+alert(result);
 
 
 // Problem 8
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
 //Code Here
+var outerFn = function() {
+  return function() {
+    return "Michael";
+  }
+};
+var innerFn = outerFn();
+alert(innerFn);
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-//Code Here
-
 //Now invoke innerFn.
+var rValue = innerFn();
+alert(rValue);
+
+
